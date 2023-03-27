@@ -9,12 +9,11 @@
     <link rel="icon" href="./assets/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/loader.css">
 </head>
-<body>
-    <div class="loader"><span>Loading</span></div>
+<body onload="showLoadingScreen();">
+    <div id="loading">
+        <div id="loading-msg">LOADING...</div>
+    </div>
+    <h1>main</h1>
 </body>
-<script>
-    setTimeout(function() {
-        window.location.href = "main.html";
-    }, 5000);
-</script>
+<script src="./js/loader.js"></script>
 </html>
