@@ -142,7 +142,11 @@
     padding: 10px;
 }
 
-.social-icon-container .icon:nth-child(1){
+.social-icon-container .icon span a i{
+    color: #fff;
+}
+
+.social-icon-container .icon:nth-child(1) span{
     background: linear-gradient(135deg, #405DE6, #FB4B4E, #FFA801);
     border-radius: 15px;
 }
@@ -153,11 +157,11 @@
     position: absolute;
 }
 
-.social-icon-container .icon:nth-child(2){
+.social-icon-container .icon:nth-child(2) span{
     background: #3B5998;
     border-radius: 15px;
 }
-.social-icon-container .icon:nth-child(3){
+.social-icon-container .icon:nth-child(3) span{
     background-color: #000;
     border-radius: 15px;
 }
