@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon">
     <link rel="icon" href="./assets/fav.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="./css/profile.css">
 </head>
-<!-- <body> -->
+<body>
 <body onload="showLoadingScreen();">
     <!-- <div id="loading">
         <div id="loading-msg">LOADING...</div>
     </div> -->
     <div class="scroll-container">
-        <div class="scroll-area first-page">
+        <div class="scroll-area">TEMP</div>
+        <!-- <div class="scroll-area first-page">
             <div class="img-box">
                 <img src="./assets/likelion_w_logo.png" alt="">
             </div>
@@ -45,8 +48,41 @@
                 </mask>
             </svg>
             <div id="sub-text">반갑습니다! FE개발자가 되고 싶은 전지웅 입니다!</div>
+        </div> -->
+        <div class="scroll-area second-page">
+            <!-- 좌측 contents --> 
+            <div class="profile-container">
+                <div class="circle"></div>
+                <div class="img-container">
+                    <img src="./assets/profile_img.png">
+                </div>
+                <div class="information">
+                    <div class="info">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <h3>전지웅</h3>
+                    </div>
+                    <div class="info">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <h3>jun000628@naver.com</h3>
+                    </div>
+                    <div class="info">
+                        <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                        <h3>경상남도 양산시</h3>
+                    </div>
+                </div>
+                <div class="social-icon-container">
+                    <div class="icon instagram">
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                    </div>
+                    <div class="icon facebook">
+                        <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </div>
+                    <div class="icon git">
+                        <span><i class="fa-brands fa-github"></i></span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="scroll-area">2</div>
         <div class="scroll-area">3</div>
     </div>
 </body>

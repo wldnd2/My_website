@@ -1,0 +1,163 @@
+.second-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    position: absolute;
+    height: 55em;
+    width: 23em;
+    left: 5%;
+    top: auto;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1), 5px 5px 20px rgba(0,0,0,0.1);
+}
+
+/* 프로필 이미지 컨데이너 */
+
+.img-container {
+    background: linear-gradient(to bottom left, #f9d423 0%, #99ccff 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 13%;
+    left: 6%;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-container img {
+    position: absolute;
+    left: -2%;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
+}
+
+.circle {
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom left, #ffff99 0%, #ccccff 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom left, #ffff99 0%, #ccccff 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    top: -420%;
+    left: 290%;
+    z-index: 10;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom left, #ffff99 0%, #ccccff 100%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    top: -370%;
+    left: -10%;
+    z-index: 10;
+}
+
+/* 개인 정보 */
+.information {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.information .info {
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+    margin-bottom: 1.2em;
+    margin-right: auto;
+}
+
+.information .info span {
+    margin-right: 1em;
+}
+
+.information .info span i{
+    font-size: 1.3em;
+    color: #000;
+}
+
+.information .info h3{
+    font-size: 1.2em;
+    color: #000;
+}
+
+/* SNS 계정 */
+.social-icon-container {
+    /* background: #000; */
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon-container .icon {
+    display: flex;
+    margin: 1.5em;
+}
+
+.social-icon-container .icon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5em;
+    height: 3.5em;
+    padding: 10px;
+}
+
+.social-icon-container .icon:nth-child(1){
+    background: linear-gradient(135deg, #405DE6, #FB4B4E, #FFA801);
+    border-radius: 15px;
+}
+
+.social-icon-container .icon:nth-child(1):hover .tooltip{
+    background: #000;
+    display: block;
+    position: absolute;
+}
+
+.social-icon-container .icon:nth-child(2){
+    background: #3B5998;
+    border-radius: 15px;
+}
+.social-icon-container .icon:nth-child(3){
+    background-color: #000;
+    border-radius: 15px;
+}
+
+.social-icon-container .icon span i {
+    font-size: 2.5em;
+}
