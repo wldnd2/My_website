@@ -9,13 +9,14 @@
 
 .profile-container {
     position: absolute;
-    height: 55em;
-    width: 23em;
+    height: 54em;
+    width: 24em;
     left: 5%;
     top: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     background: #fff;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.1), 5px 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1), 5px 5px 20px rgba(0,0,0,0.1), inset 2px 2px 20px rgba(0,0,0,0.1);
+    border: 5px solid #fff;
 }
 
 /* 프로필 이미지 컨데이너 */
@@ -25,11 +26,12 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 13%;
-    left: 6%;
+    left: 8%;
     width: 20em;
     height: 20em;
     border-radius: 50%;
     overflow: hidden;
+    border: 3px solid #fff;
 }
 
 .img-container img {
