@@ -91,7 +91,7 @@
     font-size: 1em;
 }
 
-@media screen and (max-width: 16in) {
+@media screen and (max-width: 2000px) {
     .third-page{
         height: 48em;
         width: 79em;
