@@ -1,16 +1,18 @@
-#thrid-page{
+.third-page{
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: 54em;
+    width: 102em;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 20px rgba( 31, 38, 135, 0.37 ), inset 2px 2px 20px rgba( 31, 38, 135, 0.37 );
 }
-
 /* 제목 */
 .title-container {
     width: 30em;
     height: 8em;
     position: absolute;
-    top: 10%;
-    left: 9%;
+    top: 5%;
+    left: 3%;
     color: #000;
     z-index: 10000;
     display: flex;
@@ -30,18 +32,14 @@
 /* 사진 이미지 */
 .cards-container {
     position: absolute;
-    height: 54em;
-    width: 100em;
+    height: 100%;
+    width: 100%;
     left: auto;
     top: auto;
-    background: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    border: 5px solid #fff;
-    box-shadow: 5px 5px 20px rgba( 31, 38, 135, 0.37 ), inset 2px 2px 20px rgba( 31, 38, 135, 0.37 );
 
 }
 
@@ -91,4 +89,70 @@
 
 .cards-container .card-info:hover .icon p {
     font-size: 1em;
+}
+
+@media screen and (max-width: 16in) {
+    .third-page{
+        height: 48em;
+        width: 79em;
+    }
+
+    .title-container .main h2 {
+        font-size: 3.5em;
+    }
+    
+    /* 사진 이미지 */
+
+    .cards-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: auto;
+        top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .cards-container .card-info{
+        width: 160px;
+        height: 160px;
+        border-radius: 20px;
+        margin: 2em;
+    }
+    
+    .cards-container .card-info:hover{
+        width: 280px;
+        height: 380px;
+        margin: 1em;
+        padding-top: 20px;
+    }
+    
+    .cards-container .card-info img{
+        width: 95%;
+        height: 85%;
+    }
+    
+    .cards-container .card-info:hover .icon {
+        position: relative;
+        color: #000;
+        padding: 5px;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        transition: 1s all;
+    }
+
+    .cards-container .card-info:hover .icon span i{
+        font-size: .7em;
+    }
+    
+    .cards-container .card-info:hover .icon p {
+        position: absolute;
+        left: 20%;
+        top: 35%;
+        font-size: .8em;
+    }
 }

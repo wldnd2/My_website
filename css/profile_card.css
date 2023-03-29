@@ -15,7 +15,7 @@
     top: auto;
     border-radius: 15px;
     background: #fff;
-    box-shadow: 5px 5px 20px rgba( 31, 38, 135, 0.37 ), inset 2px 2px 20px rgba( 31, 38, 135, 0.37 );
+    box-shadow: 5px 5px 20px rgba(31, 38, 135, 0.37), inset 2px 2px 20px rgba(31, 38, 135, 0.37);
     border: 5px solid #fff;
 }
 
@@ -107,12 +107,12 @@
     margin-right: 1em;
 }
 
-.information .info span i{
+.information .info span i {
     font-size: 1.3em;
     color: #000;
 }
 
-.information .info h3{
+.information .info h3 {
     font-size: 1.2em;
     color: #000;
 }
@@ -142,30 +142,116 @@
     padding: 10px;
 }
 
-.social-icon-container .icon span a i{
+.social-icon-container .icon span a i {
     color: #fff;
 }
 
-.social-icon-container .icon:nth-child(1) span{
+.social-icon-container .icon:nth-child(1) span {
     background: linear-gradient(135deg, #405DE6, #FB4B4E, #FFA801);
     border-radius: 15px;
 }
 
-.social-icon-container .icon:nth-child(1):hover .tooltip{
+.social-icon-container .icon:nth-child(1):hover .tooltip {
     background: #000;
     display: block;
     position: absolute;
 }
 
-.social-icon-container .icon:nth-child(2) span{
+.social-icon-container .icon:nth-child(2) span {
     background: #3B5998;
     border-radius: 15px;
 }
-.social-icon-container .icon:nth-child(3) span{
+
+.social-icon-container .icon:nth-child(3) span {
     background-color: #000;
     border-radius: 15px;
 }
 
 .social-icon-container .icon span i {
     font-size: 2.5em;
+}
+
+@media screen and (max-width: 15in) {
+    .profile-container {
+        position: absolute;
+        width: 18em;
+        height: 50em;
+        left: 5%;
+    }
+
+    /* 프로필 이미지 컨데이너 */
+    .img-container {
+        top: 15%;
+        left: 9%;
+        width: 14em;
+        height: 14em;
+    }
+
+    .img-container img {
+        position: absolute;
+        left: -3%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .circle {
+        position: absolute;
+        top: 36%;
+        left: 10%;
+    }
+
+    .circle::before {
+        content: "";
+        position: absolute;
+        top: -280%;
+        left: 210%;
+    }
+
+    .circle::after {
+        content: "";
+        position: absolute;
+        top: -270%;
+        left: -17%;
+    }
+
+    /* 개인 정보 */
+    .information {
+        position: absolute;
+        width: 80%;
+        top: 50%;
+    }
+
+    .information .info {
+        margin-left: 2.5em;
+    }
+
+    .information .info span {
+        margin-right: .2em;
+    }
+
+    .information .info span i {
+        font-size: 1.1em;
+        color: #000;
+    }
+
+    .information .info h3 {
+        font-size: 1em;
+        color: #000;
+    }
+
+    /* SNS 계정 */
+    .social-icon-container {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+    }
+
+    .social-icon-container .icon {
+        margin: 1.1em;
+    }
+
+    .social-icon-container .icon span {
+        width: 3.1em;
+        height: 3.1em;
+    }
 }

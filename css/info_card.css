@@ -120,3 +120,46 @@
     font-size: 1.1em;
     margin-left: 15px;
 }
+
+@media screen and (max-width: 15in) {
+    .card-container {
+        width: 60em;
+        height: 50em;
+        left: 28%;
+    }
+    
+    /* 개별 디자인 적용 */
+    .personal_info h3, .birthday h3, .goal h3, .hash h3, .activity h3 {
+        font-size: 1.8em;
+        position: absolute;
+        top: 10%;
+        left: 6%;
+        margin: 0 20px 0 0 ;
+    }
+    
+    .personal_info p, .birthday p {
+        font-size: 1.3em;
+    }
+    /* 올해 목표 */
+    .list-1 {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        position: absolute;
+        top: 33%;
+        left: 5%;
+    }
+    .list-1 .goal-item {
+        margin: 5px 20px;
+        font-size: 25px;
+    }
+    /* 활동 */
+    .activity h3 {
+        top: 5%;
+    }
+    .list-3 .year p{
+        font-size: 1em;
+        margin-left: 15px;
+    }
+}
